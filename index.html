@@ -1,63 +1,94 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>ALLES! CTF 2020</title>
+    <title>ALLES! CTF 2021</title>
 
-	<meta charset="utf-8"/>
+    <meta charset="utf-8" />
 
-	<script crossorigin="anonymous"
-	        integrity="sha384-9u9lzb/hr8e14GLHe5TEOrTiH3Qtw5DX2Zw9X/g7cqj81W2McEMx5CKOszxdb8jg"
-	        src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
-	<script crossorigin="anonymous"
-	        integrity="sha384-/eiBF8CfA11kqrgNAge91jcdrE+ZWV3RARGT3l/O2BmwDF5/sjb0NVTrYMXw3LlT"
-	        src="https://unpkg.com/lodash@4.17.11/lodash.js"></script>
-	<script crossorigin="anonymous"
-	        integrity="sha384-U/+EF1mNzvy5eahP9DeB32duTkAmXrePwnRWtuSh1C/bHHhyR1KZCr/aGZBkctpY"
-	        src="https://unpkg.com/axios@0.18.0/dist/axios.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-9u9lzb/hr8e14GLHe5TEOrTiH3Qtw5DX2Zw9X/g7cqj81W2McEMx5CKOszxdb8jg" src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-/eiBF8CfA11kqrgNAge91jcdrE+ZWV3RARGT3l/O2BmwDF5/sjb0NVTrYMXw3LlT" src="https://unpkg.com/lodash@4.17.11/lodash.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-U/+EF1mNzvy5eahP9DeB32duTkAmXrePwnRWtuSh1C/bHHhyR1KZCr/aGZBkctpY" src="https://unpkg.com/axios@0.18.0/dist/axios.min.js"></script>
 
-	<link href="https://cdn.jsdelivr.net/npm/@patternfly/patternfly@2.6.5/patternfly.min.css"
-	      rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@patternfly/patternfly@2.6.5/patternfly.min.css" rel="stylesheet">
 
-	<style>
-		.pf-c-content {
-			padding: 20px 15px 60px;
-			padding-top: 100px;
-			max-width: 700px;
-			margin: auto;
-		}
-
-		.camp-logo {
-			padding-right: auto;
-			max-width: 250px;
-		}
-
-		.sponsr-logo {
-			padding-right: auto;
-			max-width: 150px;
-		}
-
-		.alles-logo {
-			position: relative;
-			top: 5px;
-			max-height: 1.5em;
-		}
-
-		.center {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 50%;
-		}
-	</style>
+    <style>
+        .pf-c-content {
+            padding: 20px 15px 60px;
+            padding-top: 100px;
+            max-width: 700px;
+            margin: auto;
+        }
+        
+        .camp-logo {
+            padding-right: auto;
+            max-width: 250px;
+        }
+        
+        .sponsr-logo {
+            padding-right: auto;
+            max-width: 150px;
+        }
+        
+        .alles-logo {
+            position: relative;
+            top: 5px;
+            max-height: 1.5em;
+        }
+        
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
 </head>
 
 <body>
-<div class="pf-c-content">
-	<!--<img src="camp2019.png" alt="CCCamp 2019 logo" class="camp-logo"/>-->
-	<h1 class="pf-c-title pf-m-3xl">ALLES! CTF 2020</h1>
+    <div class="pf-c-content">
+        <!--<img src="camp2019.png" alt="CCCamp 2019 logo" class="camp-logo"/>-->
+        <h1 class="pf-c-title pf-m-3xl">ALLES! CTF 2021</h1>
+        <p>
+            <a href="https://ctftime.org/team/18419" target="_blank"><img src="alles.png" alt="ALLES" class="alles-logo" /></a> is looking forward to host
+            <a href="https://ctftime.org/event/1313" target="_blank">this year's ALLES! CTF</a>.
+        </p>
+        <h3>When?</h3>
+        <p>
+            <b>Begin</b>: Fri, 03 Sep 2021 16:00 UTC
+            <br/>
+            <b>End</b>: Sun, 05 Sep 2021 16:00 UTC (48 hours)
+        </p>
+        <h3>Where?</h3>
+        <p>
+            The CTF is open to everyone and can be played online. You do not need to pre-register for the event. A CTFtime.org account will be required to sign into the event (make sure your team members have access!).
+        </p>
+        <p>
+            IRC channel for this event is <code>#allesctf</code> on
+            <a href="https://hackint.org/" target="_blank">irc.hackint.org</a> (
+            <a href="https://webirc.hackint.org/#irc://irc.hackint.org/#allesctf">WebIRC</a>).
+        </p>
+        <h3>What?</h3>
+        <p>
+            We prepared typical challenges in the classic categories (Reversing, Forensics, Crypto, Web, Pwning, Devops, and Misc), plus some weird stuff you didn't expect! If you have played last year's ALLES! CTF 2020, you know what to expect.
+        </p>
+        <!--
+	<h2>Sponsors</h2>
+	<img src="packet.png" class="sponsr-logo"/><br/>
 	<p>
-		Thanks for playing! See you in 2021.
+		<a href="https://packet.net" target="_blank">Packet.net</a> is the world's leading provider for bare
+		metal cloud servers and sponsors this CTF's infrastructure.
+		Our CTF platform uses lightweight virtual machines for many challenges.
+		This allows us to build stateful challenges involving kernel exploitation and virtual networks.
 	</p>
-</div>
+	<p>
+		<img src="nexantic.svg" class="sponsr-logo"/>
+	</p>
+	<p>
+		nexantic GmbH is a startup founded by multiple ALLES team members.
+	</p>
+	-->
+    </div>
 </body>
+
 </html>
