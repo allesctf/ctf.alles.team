@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ALLES! CTF 2021</title>
+
+    <meta charset="utf-8" />
+
+    <script crossorigin="anonymous" integrity="sha384-9u9lzb/hr8e14GLHe5TEOrTiH3Qtw5DX2Zw9X/g7cqj81W2McEMx5CKOszxdb8jg"
+        src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-/eiBF8CfA11kqrgNAge91jcdrE+ZWV3RARGT3l/O2BmwDF5/sjb0NVTrYMXw3LlT"
+        src="https://unpkg.com/lodash@4.17.11/lodash.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-U/+EF1mNzvy5eahP9DeB32duTkAmXrePwnRWtuSh1C/bHHhyR1KZCr/aGZBkctpY"
+        src="https://unpkg.com/axios@0.18.0/dist/axios.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/@patternfly/patternfly@2.6.5/patternfly.min.css" rel="stylesheet">
+
+    <style>
+        .pf-c-content {
+            padding: 20px 15px 60px;
+            padding-top: 100px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .camp-logo {
+            padding-right: auto;
+            max-width: 250px;
+        }
+
+        .sponsr-logo {
+            padding-right: auto;
+            max-width: 150px;
+        }
+
+        .alles-logo {
+            position: relative;
+            top: 5px;
+            max-height: 1.5em;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pf-c-content">
+        <!--<img src="camp2019.png" alt="CCCamp 2019 logo" class="camp-logo"/>-->
+        <h1 class="pf-c-title pf-m-3xl">ALLES! CTF 2021</h1>
+        <p>
+            <a href="https://ctftime.org/team/18419" target="_blank"><img src="alles.png" alt="ALLES"
+                    class="alles-logo" /></a> is looking forward to host
+            <a href="https://ctftime.org/event/1313" target="_blank">this year's ALLES! CTF</a>.
+        </p>
+        <h3>When?</h3>
+        <p>
+            <b>Begin</b>: Fri, 03 Sep 2021 16:00 UTC
+            <br />
+            <b>End</b>: Sun, 05 Sep 2021 4:00 UTC (36 hours)
+        </p>
+        <h3>Where?</h3>
+        <p>
+            The CTF is open to everyone and can be played online. You do not need to pre-register for the event. A
+            CTFtime.org account will be required to sign into the event (make sure your team members have access!).
+        </p>
+        <p>
+            Communication for this event will happen on <a href="https://discord.gg/h2tRFDk6Fy">Discord</a>.
+        </p>
+        <h3>What?</h3>
+        <p>
+            We prepared typical challenges in the classic categories (Reversing, Crypto, Web, Pwning, <span
+                style="white-space: nowrap; font-style: italic;">B L O C K C H A I N</span>
+            and Misc), plus some weird stuff you didn't expect! If you have played last year's ALLES! CTF 2020, you know
+            what to expect.
+        </p>
+        <h3>Prize Pool</h3>
+        <p>
+            We're happy to announce that this year's ALLES!-CTF will have a very generous prize pool of $35,000,
+            sponsored by our
+            friends over at the <a href="https://solana.foundation/">Solana Foundation</a>. $25,000 are allocated to the
+            top 10 in the following way:
+        <ol>
+            <li>$6,000</li>
+            <li>$5,000</li>
+            <li>$4,000</li>
+            <li>$3,000</li>
+            <li>$2,000</li>
+            <li>$1,000</li>
+            <li>$1,000</li>
+            <li>$1,000</li>
+            <li>$1,000</li>
+            <li>$1,000</li>
+        </ol>
+        </p>
+        <p> We will also give $100 each to the 20 best writeups we receive after the event. Send us your writeups to <a
+                href="mailto:allesctfteam+writeups@gmail.com">allesctfteam+writeups@gmail.com</a> until Sun, 19 Sep 2021
+            anywhere on earth. We only accept pdf files.
+        </p>
+        <p> We have prepared 4 challenges that are especially challenging and will require a large amount of effort
+            to solve. For each of these challenges, if the challenge has 20 solvers or less, $2,000 will be
+            distributed among all solvers after the event is over.
+        </p>
+        <p>
+            Prizes will be paid out as USDC. Because we don't want to pay hundreds of dollars in transaction fees, we
+            will distribute them on the Solana blockchain. You can either directly deposit your SPL-USDC on <a
+                href="https://ftx.com/">FTX</a>, or trade them to SOL (which you can then deposit on any major
+            exchange) on any Solana DEX or swap, like for example <a
+                href="https://raydium.io/swap/?ammId=58oQChx4yWmvKdwLLZzBi4ChoCc2fqCUWBkwMihLYQo2">Raydium</a> or <a
+                href="https://dex.projectserum.com/#/market/9wFFyRfZBsuAha4YcuxcXLKwMxJR43S7fPfQLusDBzvT">Serum</a>. We
+            will also send 0.0001 SOL to any address that receives prize money, in order to cover any transaction fees
+            that might apply while getting the funds onto an exchange. This is enough for 20 transactions.
+        </p>
+        <p>
+            In order to be eligible for any prize money, you will have to send your Team token, which is displayed on
+            the CTF platform, to <a href="mailto:allesctfteam+kyc@gmail.com">allesctfteam+kyc@gmail.com</a> until Sun,
+            12 Sep 2021 anywhere on earth. Please also include the public key of a Solana account that you have access
+            to. We recommend you use a wallet like <a href="https://phantom.app/">Phantom</a> or <a
+                href="https://solflare.com/">Solflare</a> as both of those natively support SPL-token transfers and have
+            integrations with most onchain exchanges and swaps.
+        </p>
+        <!--
+	<h2>Sponsors</h2>
+	<img src="packet.png" class="sponsr-logo"/><br/>
+	<p>
+		<a href="https://packet.net" target="_blank">Packet.net</a> is the world's leading provider for bare
+		metal cloud servers and sponsors this CTF's infrastructure.
+		Our CTF platform uses lightweight virtual machines for many challenges.
+		This allows us to build stateful challenges involving kernel exploitation and virtual networks.
+	</p>
+	<p>
+		<img src="nexantic.svg" class="sponsr-logo"/>
+	</p>
+	<p>
+		nexantic GmbH is a startup founded by multiple ALLES team members.
+	</p>
+	-->
+    </div>
+</body>
+
+</html>
