@@ -16,6 +16,10 @@
     <link href="https://cdn.jsdelivr.net/npm/@patternfly/patternfly@2.6.5/patternfly.min.css" rel="stylesheet">
 
     <style>
+        body {
+            overflow: hidden;
+        }
+
         .pf-c-content {
             padding: 20px 15px 60px;
             padding-top: 100px;
@@ -44,6 +48,144 @@
             margin-left: auto;
             margin-right: auto;
             width: 50%;
+        }
+
+        .cake {
+            opacity: 0;
+            width: 16px;
+            height: 32px;
+            scale: 2;
+            animation: playXCake 0.5s steps(6) infinite, moveCake 20s infinite linear, rotateCake 20s infinite;
+            position: absolute;
+        }
+
+        #cake_container .cake:nth-child(1) {
+            animation-delay: calc(2s * 0);
+        }
+
+        #cake_container .cake:nth-child(2) {
+            animation-delay: calc(2s * 1);
+        }
+
+        #cake_container .cake:nth-child(3) {
+            animation-delay: calc(2s * 2);
+        }
+
+        #cake_container .cake:nth-child(4) {
+            animation-delay: calc(2s * 3);
+        }
+
+        #cake_container .cake:nth-child(5) {
+            animation-delay: calc(2s * 4);
+        }
+
+        #cake_container .cake:nth-child(6) {
+            animation-delay: calc(2s * 5);
+        }
+
+        #cake_container .cake:nth-child(7) {
+            animation-delay: calc(2s * 6);
+        }
+
+        #cake_container .cake:nth-child(8) {
+            animation-delay: calc(2s * 7);
+        }
+
+        #cake_container .cake:nth-child(9) {
+            animation-delay: calc(2s * 8);
+        }
+
+        #cake_container .cake:nth-child(10) {
+            animation-delay: calc(2s * 9);
+        }
+
+        @keyframes playXCake {
+            from {
+                background-position-x: 0px;
+                opacity: 1;
+            }
+
+            to {
+                background-position-x: 96px;
+                opacity: 1;
+            }
+        }
+
+        @keyframes moveCake {
+            0% {
+                top: 8px;
+                left: 8px;
+            }
+
+            24.99% {
+                top: calc(100% - 48px);
+                left: 8px;
+            }
+
+            25% {
+                top: calc(100% - 48px);
+                left: 8px;
+            }
+
+            49.99% {
+                top: calc(100% - 48px);
+                left: calc(100% - 24px);
+            }
+
+            50% {
+                top: calc(100% - 48px);
+                left: calc(100% - 24px);
+            }
+
+            74.99% {
+                top: 8px;
+                left: calc(100% - 24px);
+            }
+
+            75% {
+                top: 8px;
+                left: calc(100% - 24px);
+            }
+
+
+            100% {
+                top: 8px;
+                left: 8px;
+            }
+        }
+
+        @keyframes rotateCake {
+            0% {
+                background-image: url("sprites/player_south.png");
+            }
+
+            24.99% {
+                background-image: url("sprites/player_south.png");
+            }
+
+            25% {
+                background-image: url("sprites/player_east.png");
+            }
+
+            49.99% {
+                background-image: url("sprites/player_east.png");
+            }
+
+            50% {
+                background-image: url("sprites/player_north.png");
+            }
+
+            74.99% {
+                background-image: url("sprites/player_north.png");
+            }
+
+            75% {
+                background-image: url("sprites/player_west.png");
+            }
+
+            100% {
+                background-image: url("sprites/player_west.png");
+            }
         }
     </style>
 </head>
@@ -93,6 +235,38 @@
 		nexantic GmbH is a startup founded by multiple ALLES team members.
 	</p>
 	-->
+        <div id="cake_container">
+            <div class="cake">
+
+            </div>
+            <div class="cake">
+
+            </div>
+            <div class="cake">
+
+            </div>
+            <div class="cake">
+
+            </div>
+            <div class="cake">
+
+            </div>
+            <div class="cake">
+
+            </div>
+            <div class="cake">
+
+            </div>
+            <div class="cake">
+
+            </div>
+            <div class="cake">
+
+            </div>
+            <div class="cake">
+
+            </div>
+        </div>
     </div>
 </body>
 
